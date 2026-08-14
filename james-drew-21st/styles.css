@@ -84,7 +84,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   
   .whisper--top-right{
     top:15px;
-    right:20px;
+    right:150px;
     font-size:14px;
   }
   
@@ -153,12 +153,16 @@ sup{ font-size:0.4em; top:-0.6em; }
   background:var(--cream-100);
   border:2px solid var(--maroon-700);
   border-radius:2px;
-  padding:80px 50px 60px;
+  padding:155px 50px 60px;
   max-width:620px;
   width:100%;
   position:relative;
   box-shadow:0 20px 50px rgba(44,10,16,0.15);
   overflow:visible;
+}
+
+@media (max-width:640px){
+  .invitation-card{ padding:140px 30px 40px; }
 }
 
 .hero__content{ max-width:100%; text-align:center; }
@@ -225,7 +229,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   font-family:var(--script); color:var(--gold-600);
   font-size:clamp(68px,9vw,100px); margin:0; line-height:1;
   position:absolute;
-  bottom:-32px;
+  bottom:-70px;
   left:50%;
   transform:translateX(-50%) rotate(-12deg);
   z-index:2;
