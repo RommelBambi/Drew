@@ -122,6 +122,34 @@ function initQuickRsvp(){
   io.observe(rsvp);
 }
 
+/* ---------------- Background music ---------------- */
+function initBackgroundMusic(){
+  const music = document.getElementById("bgMusic");
+  const toggle = document.getElementById("musicToggle");
+  if (!music || !toggle) return;
+
+  music.volume = 0.25;
+  const setToggle = (isPlaying) => {
+    toggle.setAttribute("aria-pressed", String(isPlaying));
+    toggle.setAttribute("aria-label", isPlaying ? "Pause background music" : "Play background music");
+  };
+  const playMusic = () => music.play().then(() => setToggle(true)).catch(() => setToggle(false));
+
+  toggle.addEventListener("click", () => {
+    if (music.paused) playMusic();
+    else { music.pause(); setToggle(false); }
+  });
+
+  const startOnFirstInteraction = (event) => {
+    if (event.target instanceof Element && event.target.closest("#musicToggle")) return;
+    playMusic();
+    document.removeEventListener("pointerdown", startOnFirstInteraction, true);
+    document.removeEventListener("keydown", startOnFirstInteraction, true);
+  };
+  document.addEventListener("pointerdown", startOnFirstInteraction, true);
+  document.addEventListener("keydown", startOnFirstInteraction, true);
+}
+
 /* ---------------- RSVP form -> mailto ---------------- */
 function initRsvpForm(){
   const form = document.getElementById("rsvpForm");
@@ -158,5 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
   startCountdown();
   initReveal();
   initQuickRsvp();
+  initBackgroundMusic();
   initRsvpForm();
 });
