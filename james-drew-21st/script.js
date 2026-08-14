@@ -125,23 +125,12 @@ function initQuickRsvp(){
 /* ---------------- Background music ---------------- */
 function initBackgroundMusic(){
   const music = document.getElementById("bgMusic");
-  const toggle = document.getElementById("musicToggle");
-  if (!music || !toggle) return;
+  if (!music) return;
 
   music.volume = 0.25;
-  const setToggle = (isPlaying) => {
-    toggle.setAttribute("aria-pressed", String(isPlaying));
-    toggle.setAttribute("aria-label", isPlaying ? "Pause background music" : "Play background music");
-  };
-  const playMusic = () => music.play().then(() => setToggle(true)).catch(() => setToggle(false));
-
-  toggle.addEventListener("click", () => {
-    if (music.paused) playMusic();
-    else { music.pause(); setToggle(false); }
-  });
+  const playMusic = () => music.play().catch(() => {});
 
   const startOnFirstInteraction = (event) => {
-    if (event.target instanceof Element && event.target.closest("#musicToggle")) return;
     playMusic();
     document.removeEventListener("pointerdown", startOnFirstInteraction, true);
     document.removeEventListener("keydown", startOnFirstInteraction, true);
