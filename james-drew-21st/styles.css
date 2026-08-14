@@ -84,7 +84,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   
   .whisper--top-right{
     top:15px;
-    right:150px;
+    right:250px;
     font-size:14px;
   }
   
@@ -197,10 +197,11 @@ sup{ font-size:0.4em; top:-0.6em; }
 
 .celebrant-name{
   font-family:var(--serif); font-weight:700; text-transform:uppercase;
-  letter-spacing:0.12em; color:var(--maroon-700);
-  font-size:clamp(28px,5.4vw,48px);
+  letter-spacing:0.1em; color:var(--maroon-700);
+  font-size:clamp(24px,6vw,56px);
   margin:3px 0 0px;
   line-height:2;
+  white-space:nowrap;
 }
 
 .numeral-row{
@@ -229,7 +230,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   font-family:var(--script); color:var(--gold-600);
   font-size:clamp(68px,9vw,100px); margin:0; line-height:1;
   position:absolute;
-  bottom:-70px;
+  bottom:-30px;
   left:50%;
   transform:translateX(-50%) rotate(-12deg);
   z-index:2;
