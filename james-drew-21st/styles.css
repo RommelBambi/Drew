@@ -206,7 +206,7 @@ sup{ font-size:0.4em; top:-0.6em; }
 
 .numeral-row{
   position:relative; display:flex; align-items:center; justify-content:center;
-  margin:12px 0 0;
+  margin:-10px 0 0;
   min-height:220px;
 }
 .numeral{
@@ -230,7 +230,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   font-family:var(--script); color:var(--gold-600);
   font-size:clamp(68px,9vw,100px); margin:0; line-height:1;
   position:absolute;
-  bottom:-30px;
+  bottom:-60px;
   left:50%;
   transform:translateX(-50%) rotate(-12deg);
   z-index:2;
@@ -292,6 +292,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   font-family:var(--body); color:var(--ink-700);
   font-size:16px; letter-spacing:0.06em; margin:24px 0 0;
   text-transform:uppercase; line-height:1.5;
+  margin:80px 0 0;
 }
 
 .hero__note{
