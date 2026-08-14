@@ -130,6 +130,9 @@ function initBackgroundMusic(){
   music.volume = 0.25;
   const playMusic = () => music.play().catch(() => {});
 
+  // Attempt playback immediately; browsers may block unmuted autoplay.
+  playMusic();
+
   const startOnFirstInteraction = (event) => {
     playMusic();
     document.removeEventListener("pointerdown", startOnFirstInteraction, true);
