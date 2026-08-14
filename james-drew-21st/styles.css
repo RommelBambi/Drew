@@ -500,3 +500,9 @@ section{ padding:96px var(--edge); max-width:var(--max-w); margin:0 auto; text-a
 .footer__script{ font-family:var(--script); color:var(--maroon-700); font-size:44px; margin:0; }
 .footer__names{ font-family:var(--serif); text-transform:uppercase; letter-spacing:0.14em; font-size:15px; color:var(--ink-700); margin:6px 0 18px; }
 .footer__whisper{ font-size:14px; color:var(--gold-700); font-style:italic; }
+
+@media (max-width:640px){
+  .celebrant-name{
+    font-size:30px;
+  }
+}
