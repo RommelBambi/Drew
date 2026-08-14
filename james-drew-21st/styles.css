@@ -230,7 +230,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   font-family:var(--script); color:var(--gold-600);
   font-size:clamp(68px,9vw,100px); margin:0; line-height:1;
   position:absolute;
-  bottom:-60px;
+  bottom:-30px;
   left:50%;
   transform:translateX(-50%) rotate(-12deg);
   z-index:2;
