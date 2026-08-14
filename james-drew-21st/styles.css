@@ -200,7 +200,7 @@ sup{ font-size:0.4em; top:-0.6em; }
   letter-spacing:0.1em; color:var(--maroon-700);
   font-size:clamp(24px,6vw,64px);
   margin:3px 0 0px;
-  line-height:2;
+  line-height:1.2;
   white-space:nowrap;
 }
 
