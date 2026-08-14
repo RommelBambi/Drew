@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Drew's 21st — It's a Secret 🤫</title>
+<meta name="description" content="Join us for a surprise 21st birthday celebration for James Drew — August 29, 2026, Jollibee Scout Tobias.">
+
+<!-- Open Graph so the link looks good when shared in group chats -->
+<meta property="og:title" content="Psstt... It's a Secret! James Drew's 21st Birthday">
+<meta property="og:description" content="A surprise celebration — August 29, 2026 · 6:30 PM · Jollibee Scout Tobias">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,700;1,900&family=Cormorant+Garamond:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- decorative fixed frame border with corner flourishes -->
+<div class="frame" aria-hidden="true">
+  <svg class="flourish flourish--tl" viewBox="0 0 120 120"><use href="#flourish-shape" xlink:href="#flourish-shape"/></svg>
+  <svg class="flourish flourish--tr" viewBox="0 0 120 120"><use href="#flourish-shape" xlink:href="#flourish-shape"/></svg>
+  <svg class="flourish flourish--bl" viewBox="0 0 120 120"><use href="#flourish-shape" xlink:href="#flourish-shape"/></svg>
+  <svg class="flourish flourish--br" viewBox="0 0 120 120"><use href="#flourish-shape" xlink:href="#flourish-shape"/></svg>
+</div>
+
+<!-- shared SVG defs (flourish path + noise filter) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="flourish-shape" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M4 4 C 4 30, 4 46, 26 46 M4 4 C 30 4, 46 4, 46 26 M4 4 L 4 16 M4 4 L 16 4"/>
+      <circle cx="34" cy="16" r="2.1" fill="currentColor" stroke="none"/>
+      <circle cx="16" cy="34" r="2.1" fill="currentColor" stroke="none"/>
+      <path d="M4 4 C 14 14, 20 20, 30 30" stroke-dasharray="0.5 5" stroke-linecap="round"/>
+    </g>
+    <filter id="paper-noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.03 0"/>
+    </filter>
+  </defs>
+</svg>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- floating quick-RSVP pill -->
+<a href="#rsvp" class="quick-rsvp" id="quickRsvp">
+  <span>RSVP</span>
+</a>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__fold ribbon__fold--1"></div>
+      <div class="ribbon__fold ribbon__fold--2"></div>
+      <div class="ribbon__fold ribbon__fold--3"></div>
+      <div class="ribbon__sheen"></div>
+    </div>
+
+    <div class="watermark-21" aria-hidden="true">21</div>
+
+    <div class="invitation-card">
+      <p class="whisper whisper--top-right">
+        <span class="whisper__line">Psstt&hellip;</span>
+        <span class="whisper__line">it's a</span>
+      </p>
+
+      <div class="hero__content">
+        <p class="secret-word">Secret<span class="secret-word__bang">!</span></p>
+
+        <h1 class="celebrant-name">JAMES DREW'S</h1>
+
+        <div class="numeral-row">
+          <span class="numeral">21<sup>st</sup></span>
+          <p class="birthday-script">Birthday</p>
+        </div>
+
+        <span class="underline-swash" aria-hidden="true"></span>
+
+        <p class="celebration-text">PLEASE JOIN US FOR A SURPRISE BIRTHDAY<br>CELEBRATION</p>
+
+        <a href="#details" class="scroll-cue" aria-label="Scroll for details">
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="countdown-strip" aria-label="Countdown to the party">
+    <p class="countdown-strip__eyebrow">Keep the secret for</p>
+    <div class="countdown" id="countdown">
+      <div class="countdown__unit"><span class="countdown__num" id="cd-days">00</span><span class="countdown__label">Days</span></div>
+      <div class="countdown__sep">:</div>
+      <div class="countdown__unit"><span class="countdown__num" id="cd-hours">00</span><span class="countdown__label">Hrs</span></div>
+      <div class="countdown__sep">:</div>
+      <div class="countdown__unit"><span class="countdown__num" id="cd-mins">00</span><span class="countdown__label">Min</span></div>
+      <div class="countdown__sep">:</div>
+      <div class="countdown__unit"><span class="countdown__num" id="cd-secs">00</span><span class="countdown__label">Sec</span></div>
+    </div>
+  </section>
+
+  <!-- ============ DETAILS ============ -->
+  <section class="details" id="details">
+    <p class="section-eyebrow reveal">Please join us for a</p>
+    <h2 class="section-title reveal">Surprise Birthday Celebration</h2>
+
+    <div class="details__grid reveal">
+      <div class="details__col details__col--date">
+        <span class="details__label">August</span>
+        <span class="details__day">29</span>
+        <span class="details__year">2026</span>
+      </div>
+      <div class="details__divider" aria-hidden="true"></div>
+      <div class="details__col details__col--info">
+        <p class="details__time">6:30 PM</p>
+        <p class="details__venue">Jollibee<br>Scout Tobias</p>
+        <a class="details__map" href="https://www.google.com/maps/search/?api=1&query=Jollibee+Scout+Tobias+Quezon+City" target="_blank" rel="noopener">View on map ↗</a>
+      </div>
+    </div>
+
+    <div class="seal reveal">
+      <div class="seal__badge">
+        <span>Shh</span>
+      </div>
+      <p class="seal__text">This is a <strong>surprise</strong>. James doesn't know — please help us keep it that way, and arrive a little before 6:30.</p>
+    </div>
+
+    <p class="dress-code reveal"><span>Attire</span> — Maroon &amp; gold formal. Look sharp, keep quiet.</p>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <p class="section-eyebrow reveal">A little preview of</p>
+    <h2 class="section-title reveal">The Birthday Boy</h2>
+
+    <div class="gallery__collage">
+      <figure class="gallery__item gallery__item--1 reveal">
+        <img src="images/celebrant-1.png" alt="James Drew photo 1"
+             onerror="this.onerror=null;this.src='images/placeholder-silhouette.svg'; this.classList.add('is-placeholder');">
+      </figure>
+      <figure class="gallery__item gallery__item--2 reveal">
+        <img src="images/celebrant-2.png" alt="James Drew photo 2"
+             onerror="this.onerror=null;this.src='images/placeholder-silhouette.svg'; this.classList.add('is-placeholder');">
+      </figure>
+      <figure class="gallery__item gallery__item--3 reveal">
+        <img src="images/celebrant-3.png" alt="James Drew photo 3"
+             onerror="this.onerror=null;this.src='images/placeholder-silhouette.svg'; this.classList.add('is-placeholder');">
+      </figure>
+      <div class="gallery__watermark" aria-hidden="true">21</div>
+    </div>
+  </section>
+
+  <!-- ============ ENTOURAGE ============ -->
+  <section class="entourage" id="entourage">
+    <p class="section-eyebrow reveal">With love from the</p>
+    <h2 class="section-title reveal">Grand Entourage</h2>
+    <p class="entourage__sub reveal">Twenty-one names in every block — one for each year.</p>
+
+    <div class="entourage__grid">
+      <div class="entourage__block reveal">
+        <h3 class="entourage__title">21 Bills</h3>
+        <ol class="entourage__list" id="list-bills"></ol>
+      </div>
+      <div class="entourage__block reveal">
+        <h3 class="entourage__title">21 Dance</h3>
+        <ol class="entourage__list" id="list-dance"></ol>
+      </div>
+      <div class="entourage__block reveal">
+        <h3 class="entourage__title">21 Shots</h3>
+        <ol class="entourage__list" id="list-shots"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="rsvp" id="rsvp">
+    <p class="section-eyebrow reveal">Kindly reply by</p>
+    <h2 class="section-title reveal">August 15, 2026</h2>
+
+    <form class="rsvp__form reveal" id="rsvpForm">
+      <label class="field">
+        <span>Your name</span>
+        <input type="text" name="name" required placeholder="Full name">
+      </label>
+
+      <fieldset class="field field--radio">
+        <legend>Will you be there?</legend>
+        <label><input type="radio" name="attending" value="Joyfully accepts" checked> Joyfully accepts</label>
+        <label><input type="radio" name="attending" value="Regretfully declines"> Regretfully declines</label>
+      </fieldset>
+
+      <label class="field">
+        <span>Number of guests</span>
+        <input type="number" name="guests" min="1" max="10" value="1">
+      </label>
+
+      <label class="field">
+        <span>Message for James (optional)</span>
+        <textarea name="message" rows="3" placeholder="Leave a little note..."></textarea>
+      </label>
+
+      <button type="submit" class="btn-gold">Send my RSVP</button>
+      <p class="rsvp__note" id="rsvpNote">This opens your email app with your reply filled in — just hit send.</p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <span class="underline-swash underline-swash--small" aria-hidden="true"></span>
+    <p class="footer__script">With love,</p>
+    <p class="footer__names">The Family &amp; Friends of James Drew</p>
+    <p class="footer__whisper">🤫 remember — not a word to James.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
