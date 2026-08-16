@@ -16,14 +16,14 @@ const ENTOURAGE = {
     "Michelle Caldeo", "Melanie Bobis", "Nardy Sorillo", "Fritzie Retugal",
     "Myca Relucio", "Ma. Angela Amarcio", "Lani Tejada", "Decerella Suagao",
     "Ermmie Tan", "Elsie Relucio", "Elaine Relucio", "Jennifer Llamera",
-    "Joana Marie Tenorio", "Emma Tarinay", "Diana Tarinay", "Diane Tarinay",
+    "Joana Marie Tenorio", "Emma Tarinay", "Diana Tarinay", "Diane Go",
     "Jasper Querimit", "Abigail Ibay", "Erlinda Querimit", "Josefina Relucio",
     "Abigail Relucio"
   ],
   "list-dance": [
-    "Isabella Tan", "Rhy Anavrin Alba\u00f1o", "Josef Relucio", "Dywane Relucio",
+    "Isabella Tan", "Daine Relucio", "Rhy Anavrin Alba\u00f1o", "Josef Relucio", "Dywane Relucio",
     "Justine Tan", "Rj Lado", "Jj Vivero", "Jeremie Cuvinar",
-    "Daine Relucio", "Robert Joseph Bonifacio", "Andrei Diamse", "Achilles Notarte",
+    "Robert Joseph Bonifacio", "Andrei Diamse", "Achilles Notarte",
     "Rafael Baello", "John Kevin Lavador", "Junrel Abong", "Wilkenson Go",
     "Jeff Tan", "Ernne Relucio", "Mico Brette Relucio", "Renato Relucio",
     "Erwin Relucio"
@@ -32,7 +32,7 @@ const ENTOURAGE = {
     "Denise Relucio", "Lyca Orpiano", "Nicole Retugal", "Ella Mabasa", "Caryl Reyes",
     "Faye Santos", "Ayen Tutanes", "Riyanna Suagao", "Shannon Salonga", "Yesha Versoza",
     "Genna Rivera", "Janna Monta\u00f1a", "Sophia Perez", "Kelly Sadie", "Clarie Sonza",
-    "Jencen Reyes", "Cindy Tarinay", "Danielle Ibay", "Sofie Lacanlale", "Nichole Navarro",
+    "Jencen Reyes", "Cindy Abong", "Danielle Ibay", "Sofie Lacanlale", "Nichole Navarro",
     "Rhenae Ann Alba\u00f1o"
   ]
 };
