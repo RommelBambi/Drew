@@ -21,11 +21,11 @@ const ENTOURAGE = {
     "Abigail Relucio"
   ],
   "list-dance": [
-    "Isabella Tan", "Daine Relucio", "Rhy Anavrin Alba\u00f1o", "Josef Relucio", "Dywane Relucio",
+    "Isabella Tan", "Daine Relucio", "Josef Relucio", "Dywane Relucio",
     "Justine Tan", "Rj Lado", "Jj Vivero", "Jeremie Cuvinar",
     "Robert Joseph Bonifacio", "Andrei Diamse", "Achilles Notarte",
-    "Rafael Baello", "John Kevin Lavador", "Junrel Abong", "Wilkenson Go",
-    "Jeff Tan", "Ernne Relucio", "Mico Brette Relucio", "Renato Relucio",
+    "Rafael Baello", "John Kevin Labador", "Junrel Abong", "Wilkenson Go",
+    "Jeff Tan", "Raven Suagao", "Ernne Relucio", "Mico Brette Relucio", "Renato Relucio",
     "Erwin Relucio"
   ],
   "list-shots": [
